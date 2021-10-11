@@ -18,6 +18,7 @@
   --clr-gb-5: hsl(233, 14%, 35%);
   --clr-gb-6: hsl(235, 19%, 24%);
   --clr-box-shadow: hsl(0, 0%, 0%, 0.1);
+  --text-shadow: 2px 2px 4px #000;
 }
 
 body.light {
@@ -112,6 +113,7 @@ header.card h1 {
   letter-spacing: 1.3rem;
   font-weight: 700;
   font-size: calc(var(--base-font) * 2);
+  text-shadow: var(--text-shadow);
 }
 
 /* CHECKBOX CONTAINER AND FIELD */
