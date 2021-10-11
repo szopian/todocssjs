@@ -81,7 +81,7 @@ button {
 }
 
 button i {
-  color: var(--clr-primary);
+  color: #fff;
   text-shadow: var(--text-shadow);
 }
 
@@ -152,8 +152,7 @@ header.card h1 {
 /* CHECKED CARD */
 
 .card .cb-container .cb-input:checked + .check {
-  background: url("../assets/images/icon-check.svg"),
-    linear-gradient(45deg, var(--clr-green), var(--clr-pink));
+  background: linear-gradient(45deg, var(--clr-green), var(--clr-pink));
   background-repeat: no-repeat;
   background-position: center;
 }

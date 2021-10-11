@@ -9,10 +9,10 @@ function main() {
     .getElementById("theme-switcher")
     .addEventListener("click", function () {
       document.querySelector("body").classList.toggle("light");
-      const themeImg = this.children[0];
-      themeImg.setAttribute(
+      const themeIcon = this.children[0];
+      themeIcon.setAttribute(
         "class",
-        themeImg.getAttribute("class") === "fas fa-sun"
+        themeIcon.getAttribute("class") === "fas fa-sun"
           ? "far fa-moon"
           : "fas fa-sun"
       );
@@ -138,7 +138,7 @@ function addTodo(todos = JSON.parse(localStorage.getItem("todos"))) {
     const check = document.createElement("span");
     const item = document.createElement("p");
     const button = document.createElement("button");
-    const img = document.createElement("img");
+    const i = document.createElement("i");
     // Add classes
     card.classList.add("card");
     button.classList.add("clear");
@@ -149,8 +149,8 @@ function addTodo(todos = JSON.parse(localStorage.getItem("todos"))) {
     button.classList.add("clear");
     // Set attributes
     card.setAttribute("draggable", true);
-    img.setAttribute("src", "./assets/images/icon-cross.svg");
-    img.setAttribute("alt", "Clear it");
+    i.setAttribute("class", "fas fa-times");
+    i.setAttribute("alt", "Clear it");
     cbInput.setAttribute("type", "checkbox");
     // set todo item for card
     item.textContent = todo.item;
@@ -202,7 +202,7 @@ function addTodo(todos = JSON.parse(localStorage.getItem("todos"))) {
       });
     });
     // parent.appendChild(child)
-    button.appendChild(img);
+    button.appendChild(i);
     cbContainer.appendChild(cbInput);
     cbContainer.appendChild(check);
     card.appendChild(cbContainer);
