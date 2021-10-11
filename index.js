@@ -149,7 +149,7 @@ function addTodo(todos = JSON.parse(localStorage.getItem("todos"))) {
     button.classList.add("clear");
     // Set attributes
     card.setAttribute("draggable", true);
-    i.setAttribute("class", "fas fa-times");
+    i.setAttribute("class", "fas fa-times-circle");
     i.setAttribute("alt", "Clear it");
     cbInput.setAttribute("type", "checkbox");
     // set todo item for card
