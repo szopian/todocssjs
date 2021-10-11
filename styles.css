@@ -110,7 +110,7 @@ label {
 header.card {
   background: transparent;
   padding: 0;
-  align-items: flex-start;
+  align-items: center;
 }
 
 header.card h1 {
