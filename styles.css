@@ -80,6 +80,11 @@ button {
   user-select: none;
 }
 
+button i {
+  color: var(--clr-primary);
+  text-shadow: var(--text-shadow);
+}
+
 input:focus,
 button:focus {
   outline: 0;

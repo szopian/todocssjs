@@ -11,10 +11,10 @@ function main() {
       document.querySelector("body").classList.toggle("light");
       const themeImg = this.children[0];
       themeImg.setAttribute(
-        "src",
-        themeImg.getAttribute("src") === "./assets/images/icon-sun.svg"
-          ? "./assets/images/icon-moon.svg"
-          : "./assets/images/icon-sun.svg"
+        "class",
+        themeImg.getAttribute("class") === "fas fa-sun"
+          ? "far fa-moon"
+          : "fas fa-sun"
       );
     });
   // get alltodos and initialise listeners
